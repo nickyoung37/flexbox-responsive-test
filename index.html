@@ -10,57 +10,47 @@
     />
     <style>
       body {
-        font-family: "Sono", sans-serif;
-        display: flex;
-        justify-content: center;
-        
-        
+        font-family: "Sono", sans-serif;        
       }
 
       .pricing-container {
         display: flex;
-        max-width: 900px;
-        gap: 15px;
-        
-        
-        
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 15px;              
       }
 
       .pricing-plan {
+        flex: 1;
         background-color: lightgray;
-        padding: 15px;
-        justify-items: center;
-        font-weight: 1000;
-        
-        
-        
-      }
-
-      ul {
-        list-style: none;
-        justify-items: center;
-        padding: 0px;
-      }
-      
-      li {
-        padding: 5px;
+        max-width: 400px;
+        padding: 20px;
         text-align: center;
+        border-radius: 5px;        
       }
 
       .plan-title {
-        text-align: center;
-        
-        
+        font-size: 24px;
+        font-weight: bold;
+        font-size: large;
+        margin-bottom: 10px;
       }
 
       .plan-price {
-        font-size: xx-large;
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
       }
 
       .plan-features {
-        font-size: x-small;
-        justify-items: center;
-    
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .plan-features li {
+        margin-bottom: 10px;
       }
 
       .plan-button {
@@ -68,20 +58,26 @@
         color: white;
         padding: 5px;
         font-size: x-small;
-        border-radius: 12%;
+        border-radius: 5px;
         border: 0;
         
       }
 
+
+      
+      
+      li {
+        padding: 5px;
+      }
+
+      
+
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 800px) {
+      @media (max-width: 1250px) {
 
         .pricing-container {
-          display: flex;
-          gap: 15px;
           flex-direction: column;
-          align-content: center;
-          flex-grow: 1;
+          height: 100%;
           
         }
       }
@@ -92,7 +88,7 @@
     <div class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
-        <div class="plan-price">$9.99/month</div>
+        <div class="plan-price">$11.99/month</div>
         <ul class="plan-features">
           <li>✅ 10GB Storage</li>
           <li>✅ 1 User</li>
