@@ -18,13 +18,14 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        
         gap: 15px;              
       }
 
       .pricing-plan {
         flex: 1;
         background-color: lightgray;
-        max-width: 400px;
+        min-width: 400px;
         padding: 20px;
         text-align: center;
         border-radius: 5px;        
@@ -57,7 +58,7 @@
         background-color: #FE6600;
         color: white;
         padding: 5px;
-        font-size: x-small;
+        font-size: medium;
         border-radius: 5px;
         border: 0;
         
@@ -73,13 +74,12 @@
       
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
+      @media (max-width: 1200px) {
 
         .pricing-container {
           flex-direction: column;
           height: 100%;
-          
-        }
+        }        
       }
     </style>
   </head>
@@ -88,7 +88,7 @@
     <div class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
-        <div class="plan-price">$11.99/month</div>
+        <div class="plan-price">$1.99/month</div>
         <ul class="plan-features">
           <li>✅ 10GB Storage</li>
           <li>✅ 1 User</li>
